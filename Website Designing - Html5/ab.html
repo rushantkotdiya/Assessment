@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Apply Now</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <script src="./js/contect.js"></script>
+</head>
+<body>
+
+  <div class="apply-container">
+    <form id="applyForm" class="apply-form">
+      <h2>Apply Now</h2>
+
+      <label for="name">Full Name (3–6 letters only):</label>
+      <input type="text" id="name" name="name" required pattern="[A-Za-z]{3,6}" />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="course">Select Course:</label>
+      <select id="course" name="course" required>
+        <option value="">-- Choose a course --</option>
+        <option value="web">Web Development</option>
+        <option value="design">Graphic Design</option>
+        <option value="data">Data Science</option>
+      </select>
+
+      <label for="message">Why are you interested?</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <button type="submit">Submit Application</button>
+      <p class="status" id="status"></p>
+    </form>
+  </div>
+</body>
+</html>
