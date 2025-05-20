@@ -1,0 +1,20 @@
+/* Custom styles for the image gallery */
+body {
+  background-color: #f8f9fa;
+}
+
+h2 {
+  font-weight: bold;
+  color: #343a40;
+}
+
+.gallery-img {
+  border: 3px solid #dee2e6;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
